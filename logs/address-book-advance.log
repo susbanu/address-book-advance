@@ -1,0 +1,257 @@
+2021-08-11 09:19:54,469 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='61125be39af9543954486c38', description='null'}-localhost:27017] Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:630)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:515)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:355)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:315)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:647)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:512)
+	... 5 common frames omitted
+2021-08-11 09:19:54,810 INFO org.mongodb.driver.connection [cluster-ClusterId{value='61125be39af9543954486c38', description='null'}-localhost:27017] Opened connection [connectionId{localValue:73, serverValue:111}] to localhost:27017
+2021-08-11 09:19:54,811 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='61125be39af9543954486c38', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=267648700}
+2021-08-11 09:33:56,612 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='61125be39af9543954486c38', description='null'}-localhost:27017] Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:630)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:515)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:355)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:315)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:647)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:512)
+	... 5 common frames omitted
+2021-08-11 09:33:56,616 INFO org.mongodb.driver.connection [cluster-ClusterId{value='61125be39af9543954486c38', description='null'}-localhost:27017] Opened connection [connectionId{localValue:74, serverValue:112}] to localhost:27017
+2021-08-11 09:33:56,617 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='61125be39af9543954486c38', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2658900}
+2021-08-11 12:15:01,571 INFO org.mongodb.driver.connection [Thread-114] Closed connection [connectionId{localValue:71, serverValue:109}] to localhost:27017 because there was a socket exception raised on another connection from this pool.
+2021-08-11 12:15:01,745 INFO org.mongodb.driver.connection [Thread-114] Opened connection [connectionId{localValue:75, serverValue:113}] to localhost:27017
+2021-08-11 12:15:01,748 INFO org.mongodb.driver.connection [Thread-114] Closed connection [connectionId{localValue:75, serverValue:113}] to localhost:27017 because the pool has been closed.
+2021-08-11 12:15:05,312 INFO com.address.AddressBookAdvanceApplication [restartedMain] Starting AddressBookAdvanceApplication using Java 11.0.12 on EPINPUNW0207 with PID 32796 (C:\Users\Sushant_Banugariya\EPAM\Projects\SpringBoot\address-book-advance\target\classes started by Sushant_Banugariya in C:\Users\Sushant_Banugariya\EPAM\Projects\SpringBoot\address-book-advance)
+2021-08-11 12:15:05,312 INFO com.address.AddressBookAdvanceApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-11 12:15:05,725 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-08-11 12:15:05,753 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 27 ms. Found 1 MongoDB repository interfaces.
+2021-08-11 12:15:05,875 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2021-08-11 12:15:05,876 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-08-11 12:15:05,876 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-11 12:15:05,910 INFO org.apache.catalina.core.ContainerBase.[Tomcat-2].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-08-11 12:15:05,910 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 592 ms
+2021-08-11 12:15:05,968 INFO org.mongodb.driver.cluster [restartedMain] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-08-11 12:15:05,974 INFO org.mongodb.driver.connection [cluster-ClusterId{value='611371f19af9543954486c3a', description='null'}-localhost:27017] Opened connection [connectionId{localValue:78, serverValue:116}] to localhost:27017
+2021-08-11 12:15:05,977 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='611371f19af9543954486c3a', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2511400}
+2021-08-11 12:15:05,977 INFO org.mongodb.driver.connection [cluster-rtt-ClusterId{value='611371f19af9543954486c3a', description='null'}-localhost:27017] Opened connection [connectionId{localValue:79, serverValue:117}] to localhost:27017
+2021-08-11 12:15:06,003 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-08-11 12:15:06,436 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path ''
+2021-08-11 12:15:06,445 INFO com.address.AddressBookAdvanceApplication [restartedMain] Started AddressBookAdvanceApplication in 1.187 seconds (JVM running for 92168.322)
+2021-08-11 12:15:06,447 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-08-11 12:16:49,317 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-08-11 12:16:49,344 INFO com.address.AddressBookAdvanceApplication [restartedMain] Starting AddressBookAdvanceApplication using Java 11.0.12 on EPINPUNW0207 with PID 31584 (C:\Users\Sushant_Banugariya\EPAM\Projects\SpringBoot\address-book-advance\target\classes started by Sushant_Banugariya in C:\Users\Sushant_Banugariya\EPAM\Projects\SpringBoot\address-book-advance)
+2021-08-11 12:16:49,348 INFO com.address.AddressBookAdvanceApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-11 12:16:49,434 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-11 12:16:49,435 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-11 12:16:51,159 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-08-11 12:16:51,255 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 89 ms. Found 1 MongoDB repository interfaces.
+2021-08-11 12:16:52,072 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2021-08-11 12:16:52,088 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2021-08-11 12:16:52,088 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-08-11 12:16:52,088 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-11 12:16:52,246 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-08-11 12:16:52,246 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2810 ms
+2021-08-11 12:16:52,758 INFO org.mongodb.driver.cluster [restartedMain] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-08-11 12:16:52,902 INFO org.mongodb.driver.connection [cluster-ClusterId{value='6113725cc9ac255e49f621a4', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:118}] to localhost:27017
+2021-08-11 12:16:52,903 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='6113725cc9ac255e49f621a4', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=44643800}
+2021-08-11 12:16:52,903 INFO org.mongodb.driver.connection [cluster-rtt-ClusterId{value='6113725cc9ac255e49f621a4', description='null'}-localhost:27017] Opened connection [connectionId{localValue:2, serverValue:119}] to localhost:27017
+2021-08-11 12:16:53,137 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-08-11 12:16:54,813 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 13 endpoint(s) beneath base path '/actuator'
+2021-08-11 12:16:54,859 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2021-08-11 12:16:54,906 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path ''
+2021-08-11 12:16:54,935 INFO com.address.AddressBookAdvanceApplication [restartedMain] Started AddressBookAdvanceApplication in 6.398 seconds (JVM running for 8.626)
+2021-08-11 12:16:57,836 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [RMI TCP Connection(1)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-11 12:16:57,836 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2021-08-11 12:16:57,838 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(1)-127.0.0.1] Completed initialization in 1 ms
+2021-08-11 12:20:38,615 INFO org.mongodb.driver.connection [http-nio-8081-exec-4] Opened connection [connectionId{localValue:3, serverValue:120}] to localhost:27017
+2021-08-11 12:26:41,742 INFO org.mongodb.driver.connection [Thread-4] Closed connection [connectionId{localValue:3, serverValue:120}] to localhost:27017 because the pool has been closed.
+2021-08-11 12:26:41,847 INFO com.address.AddressBookAdvanceApplication [restartedMain] Starting AddressBookAdvanceApplication using Java 11.0.12 on EPINPUNW0207 with PID 31584 (C:\Users\Sushant_Banugariya\EPAM\Projects\SpringBoot\address-book-advance\target\classes started by Sushant_Banugariya in C:\Users\Sushant_Banugariya\EPAM\Projects\SpringBoot\address-book-advance)
+2021-08-11 12:26:41,848 INFO com.address.AddressBookAdvanceApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-11 12:26:42,267 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-08-11 12:26:42,283 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 16 ms. Found 1 MongoDB repository interfaces.
+2021-08-11 12:26:42,366 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2021-08-11 12:26:42,367 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2021-08-11 12:26:42,367 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-08-11 12:26:42,367 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-11 12:26:42,395 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-08-11 12:26:42,395 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 544 ms
+2021-08-11 12:26:42,446 INFO org.mongodb.driver.cluster [restartedMain] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-08-11 12:26:42,451 INFO org.mongodb.driver.connection [cluster-ClusterId{value='611374aac9ac255e49f621a5', description='null'}-localhost:27017] Opened connection [connectionId{localValue:5, serverValue:121}] to localhost:27017
+2021-08-11 12:26:42,452 INFO org.mongodb.driver.connection [cluster-rtt-ClusterId{value='611374aac9ac255e49f621a5', description='null'}-localhost:27017] Opened connection [connectionId{localValue:4, serverValue:122}] to localhost:27017
+2021-08-11 12:26:42,453 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='611374aac9ac255e49f621a5', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1489700}
+2021-08-11 12:26:42,470 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-08-11 12:26:42,821 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 11 endpoint(s) beneath base path '/actuator'
+2021-08-11 12:26:42,832 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2021-08-11 12:26:42,835 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path ''
+2021-08-11 12:26:42,846 INFO com.address.AddressBookAdvanceApplication [restartedMain] Started AddressBookAdvanceApplication in 1.041 seconds (JVM running for 596.537)
+2021-08-11 12:26:42,849 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-08-11 12:55:03,458 INFO com.address.AddressBookAdvanceApplication [restartedMain] Starting AddressBookAdvanceApplication using Java 11.0.12 on EPINPUNW0207 with PID 31584 (C:\Users\Sushant_Banugariya\EPAM\Projects\SpringBoot\address-book-advance\target\classes started by Sushant_Banugariya in C:\Users\Sushant_Banugariya\EPAM\Projects\SpringBoot\address-book-advance)
+2021-08-11 12:55:03,458 INFO com.address.AddressBookAdvanceApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-11 12:55:03,786 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-08-11 12:55:03,804 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 17 ms. Found 1 MongoDB repository interfaces.
+2021-08-11 12:55:03,872 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2021-08-11 12:55:03,873 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2021-08-11 12:55:03,874 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-08-11 12:55:03,874 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-11 12:55:03,898 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-08-11 12:55:03,898 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 437 ms
+2021-08-11 12:55:03,948 INFO org.mongodb.driver.cluster [restartedMain] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-08-11 12:55:03,951 INFO org.mongodb.driver.connection [cluster-rtt-ClusterId{value='61137b4fc9ac255e49f621a6', description='null'}-localhost:27017] Opened connection [connectionId{localValue:6, serverValue:124}] to localhost:27017
+2021-08-11 12:55:03,951 INFO org.mongodb.driver.connection [cluster-ClusterId{value='61137b4fc9ac255e49f621a6', description='null'}-localhost:27017] Opened connection [connectionId{localValue:7, serverValue:123}] to localhost:27017
+2021-08-11 12:55:03,953 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='61137b4fc9ac255e49f621a6', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=1471600}
+2021-08-11 12:55:03,970 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-08-11 12:55:04,259 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 11 endpoint(s) beneath base path '/actuator'
+2021-08-11 12:55:04,270 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2021-08-11 12:55:04,272 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path ''
+2021-08-11 12:55:04,278 INFO com.address.AddressBookAdvanceApplication [restartedMain] Started AddressBookAdvanceApplication in 0.853 seconds (JVM running for 2297.969)
+2021-08-11 12:55:04,281 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2021-08-11 14:17:32,098 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='61137b4fc9ac255e49f621a6', description='null'}-localhost:27017] Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:630)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:515)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:355)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:315)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:647)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:512)
+	... 5 common frames omitted
+2021-08-11 14:17:32,491 INFO org.mongodb.driver.connection [cluster-ClusterId{value='61137b4fc9ac255e49f621a6', description='null'}-localhost:27017] Opened connection [connectionId{localValue:8, serverValue:125}] to localhost:27017
+2021-08-11 14:17:32,492 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='61137b4fc9ac255e49f621a6', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=270346000}
+2021-08-11 14:22:30,709 INFO org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(128)-127.0.0.1] Application shutdown requested.
+2021-08-11 14:22:50,879 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 6.2.0.Final
+2021-08-11 14:22:50,896 INFO com.address.AddressBookAdvanceApplication [restartedMain] Starting AddressBookAdvanceApplication using Java 11.0.12 on EPINPUNW0207 with PID 23656 (C:\Users\Sushant_Banugariya\EPAM\Projects\SpringBoot\address-book-advance\target\classes started by Sushant_Banugariya in C:\Users\Sushant_Banugariya\EPAM\Projects\SpringBoot\address-book-advance)
+2021-08-11 14:22:50,898 INFO com.address.AddressBookAdvanceApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-08-11 14:22:51,019 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-08-11 14:22:51,019 INFO org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-08-11 14:22:53,409 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2021-08-11 14:22:53,553 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 134 ms. Found 1 MongoDB repository interfaces.
+2021-08-11 14:22:54,883 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8081 (http)
+2021-08-11 14:22:54,907 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8081"]
+2021-08-11 14:22:54,908 INFO org.apache.catalina.core.StandardService [restartedMain] Starting service [Tomcat]
+2021-08-11 14:22:54,909 INFO org.apache.catalina.core.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-08-11 14:22:55,186 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-08-11 14:22:55,187 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 4167 ms
+2021-08-11 14:22:55,924 INFO org.mongodb.driver.cluster [restartedMain] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+2021-08-11 14:22:56,080 INFO org.mongodb.driver.connection [cluster-rtt-ClusterId{value='61138fe78bf54e7ad8db45fb', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:127}] to localhost:27017
+2021-08-11 14:22:56,082 INFO org.mongodb.driver.connection [cluster-ClusterId{value='61138fe78bf54e7ad8db45fb', description='null'}-localhost:27017] Opened connection [connectionId{localValue:2, serverValue:126}] to localhost:27017
+2021-08-11 14:22:56,086 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='61138fe78bf54e7ad8db45fb', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=50774400}
+2021-08-11 14:22:56,360 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-08-11 14:22:58,416 INFO org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver [restartedMain] Exposing 11 endpoint(s) beneath base path '/actuator'
+2021-08-11 14:22:58,481 INFO org.apache.coyote.http11.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8081"]
+2021-08-11 14:22:58,533 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8081 (http) with context path ''
+2021-08-11 14:22:58,573 INFO com.address.AddressBookAdvanceApplication [restartedMain] Started AddressBookAdvanceApplication in 8.819 seconds (JVM running for 11.473)
+2021-08-11 14:22:59,447 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [RMI TCP Connection(3)-127.0.0.1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-08-11 14:22:59,447 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(3)-127.0.0.1] Initializing Servlet 'dispatcherServlet'
+2021-08-11 14:22:59,452 INFO org.springframework.web.servlet.DispatcherServlet [RMI TCP Connection(3)-127.0.0.1] Completed initialization in 3 ms
+2021-08-11 14:23:26,683 WARN org.springframework.web.servlet.PageNotFound [http-nio-8081-exec-3] No mapping for GET /
+2021-08-11 14:23:26,708 ERROR com.address.exception.RestExceptionHandler [http-nio-8081-exec-3] Request handler not found : {0}
+org.springframework.web.servlet.NoHandlerFoundException: No handler found for GET /
+	at org.springframework.web.servlet.DispatcherServlet.noHandlerFound(DispatcherServlet.java:1279)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1042)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:228)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:190)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:163)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1723)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2021-08-11 15:00:23,512 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='61138fe78bf54e7ad8db45fb', description='null'}-localhost:27017] Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:630)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:515)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:355)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:315)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:647)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:512)
+	... 5 common frames omitted
+2021-08-11 15:00:23,624 INFO org.mongodb.driver.connection [cluster-ClusterId{value='61138fe78bf54e7ad8db45fb', description='null'}-localhost:27017] Opened connection [connectionId{localValue:3, serverValue:128}] to localhost:27017
+2021-08-11 15:00:23,625 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='61138fe78bf54e7ad8db45fb', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=9, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=100836200}
+2021-08-11 16:23:10,627 INFO org.mongodb.driver.cluster [cluster-ClusterId{value='61138fe78bf54e7ad8db45fb', description='null'}-localhost:27017] Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketReadTimeoutException: Timeout while receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:630)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:515)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:355)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:315)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:215)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:647)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:512)
+	... 5 common frames omitted
+2021-08-11 16:23:11,214 INFO org.mongodb.driver.connection [cluster-ClusterId{value='61138fe78bf54e7ad8db45fb', description='null'}-localhost:27017] Opened connection [connectionId{localValue:4, serverValue:129}] to localhost:27017
